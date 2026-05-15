@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Swift Man Documentation</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f8fb;
+      --fg: #17202a;
+      --muted: #657281;
+      --card: #ffffff;
+      --line: #dfe4ea;
+      --accent: #0f766e;
+      --accent-soft: #d9f4f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --fg: #eef2f6;
+        --muted: #a3acb7;
+        --card: #181d24;
+        --line: #2c3440;
+        --accent: #5eead4;
+        --accent-soft: #123a36;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    main {
+      width: min(920px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 64px 0;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+    }
+
+    .doc-card {
+      display: block;
+      min-height: 140px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--card);
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 160ms ease, transform 160ms ease;
+    }
+
+    .doc-card:hover,
+    .doc-card:focus-visible {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .doc-card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .doc-card span {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 28px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="badge">DocC</div>
+      <h1>Swift Man Documentation</h1>
+      <p>GitHub Pages에서 배포되는 Swift 패키지 문서 모음입니다.</p>
+    </header>
+
+    <section class="docs-grid" aria-label="문서 목록" id="docsGrid"></section>
+  </main>
+
+  <script>
+    const docs = [
+      {
+        name: "LaunchingView",
+        href: "LaunchingView/documentation/",
+        description: "LaunchingView DocC documentation"
+      },
+      {
+        name: "AnotherPackage",
+        href: "AnotherPackage/documentation/",
+        description: "AnotherPackage DocC documentation"
+      }
+    ];
+
+    const docsGrid = document.getElementById("docsGrid");
+
+    docsGrid.innerHTML = docs.map((doc) => `
+      <a class="doc-card" href="${doc.href}">
+        <strong>${doc.name}</strong>
+        <span>${doc.description}</span>
+      </a>
+    `).join("");
+  </script>
+</body>
+</html>
