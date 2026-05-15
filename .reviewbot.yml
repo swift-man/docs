@@ -1,0 +1,14 @@
+version: 1
+
+review:
+  # This repository only hosts generated documentation for GitHub Pages.
+  # Keep every path out of code review.
+  include: []
+
+  exclude:
+    - "**"
+    - "**/*"
+    - ".*"
+    - ".*/**"
+
+  always_review: []
