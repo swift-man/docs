@@ -149,7 +149,7 @@
     const docsGrid = document.getElementById("docsGrid");
 
     docsGrid.innerHTML = docs.map((doc) => `
-      <a class="doc-card" href="${doc.href}">
+      <a class="doc-card" href="${doc.href}" target="_blank" rel="noopener noreferrer">
         <strong>${doc.name}</strong>
         <span>${doc.description}</span>
       </a>
