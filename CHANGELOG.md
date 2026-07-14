@@ -2,6 +2,12 @@
 
 이 저장소의 주요 변경 사항을 기록합니다.
 
+## [Unreleased]
+
+### Added
+
+- LaunchingService Android의 Dokka 문서 진입점과 공유 문서 허브 안내를 추가합니다.
+
 ## [1.0.0] - 2026-07-07
 
 ### Added
