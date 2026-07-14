@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>me.gorani.launchingservice</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../index.html" tabindex="1">
+                    LaunchingService Android
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+0.1.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":launching-service/release">release</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":launching-service/release"
+                                       data-filter=":launching-service/release"/>
+                                <span class="checkbox--icon"></span>
+                                release
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    LaunchingService Android
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="package" id="content" pageIds="LaunchingService Android::me.gorani.launchingservice////PointingToDeclaration//-7743565">
+  <div class="breadcrumbs"><a href="../../index.html">LaunchingService Android</a><span class="delimiter">/</span><span class="current">me.gorani.launchingservice</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="1409884956%2FClasslikes%2F-7743565" anchor-label="AppUpdateInfo" id="1409884956%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-app-update-info/index.html"><span>App</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1409884956%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-app-update-info/index.html">AppUpdateInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>version<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>alertTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>alertMessage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>alertDoneUri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="148904472%2FClasslikes%2F-7743565" anchor-label="AppUpdateStatus" id="148904472%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-app-update-status/index.html"><span>App</span><wbr></wbr><span>Update</span><wbr></wbr><span><span>Status</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="148904472%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">interface </span><a href="-app-update-status/index.html">AppUpdateStatus</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="733449029%2FClasslikes%2F-7743565" anchor-label="Launching" id="733449029%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-launching/index.html"><span><span>Launching</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="733449029%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-launching/index.html">Launching</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>forceUpdate<span class="token operator">: </span><a href="-app-update-info/index.html">AppUpdateInfo</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>optionalUpdate<span class="token operator">: </span><a href="-app-update-info/index.html">AppUpdateInfo</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>blackListVersions<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>notice<span class="token operator">: </span><a href="-notice-info/index.html">NoticeInfo</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="761644456%2FClasslikes%2F-7743565" anchor-label="LaunchingService" id="761644456%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-launching-service/index.html"><span>Launching</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="761644456%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-launching-service/index.html">LaunchingService</a> : <a href="-launching-service-client/index.html">LaunchingServiceClient</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-47423779%2FClasslikes%2F-7743565" anchor-label="LaunchingServiceClient" id="-47423779%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-launching-service-client/index.html"><span>Launching</span><wbr></wbr><span>Service</span><wbr></wbr><span><span>Client</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-47423779%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-launching-service-client/index.html">LaunchingServiceClient</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="657567563%2FClasslikes%2F-7743565" anchor-label="LaunchingServiceException" id="657567563%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-launching-service-exception/index.html"><span>Launching</span><wbr></wbr><span>Service</span><wbr></wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="657567563%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">sealed </span><span class="token keyword">class </span><a href="-launching-service-exception/index.html">LaunchingServiceException</a> : <a href="https://developer.android.com/reference/kotlin/java/lang/Exception.html">Exception</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="869422525%2FClasslikes%2F-7743565" anchor-label="LaunchingStatusComparator" id="869422525%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-launching-status-comparator/index.html"><span>Launching</span><wbr></wbr><span>Status</span><wbr></wbr><span><span>Comparator</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="869422525%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-launching-status-comparator/index.html">LaunchingStatusComparator</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">nowEpochMillis<span class="token operator">: </span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token operator"> = </span>System::currentTimeMillis</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1847774704%2FClasslikes%2F-7743565" anchor-label="NoticeAlert" id="-1847774704%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-notice-alert/index.html"><span>Notice</span><wbr></wbr><span><span>Alert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1847774704%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-notice-alert/index.html">NoticeAlert</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>terminateOnDismiss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>doneUri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-665819096%2FClasslikes%2F-7743565" anchor-label="NoticeInfo" id="-665819096%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-notice-info/index.html"><span>Notice</span><wbr></wbr><span><span>Info</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-665819096%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-notice-info/index.html">NoticeInfo</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>terminateOnDismiss<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>startEpochMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>endEpochMillis<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-long/index.html">Long</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>doneUri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1900019360%2FClasslikes%2F-7743565" anchor-label="RemoteConfigFetchFailureObserver" id="-1900019360%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-remote-config-fetch-failure-observer/index.html"><span>Remote</span><wbr></wbr><span>Config</span><wbr></wbr><span>Fetch</span><wbr></wbr><span>Failure</span><wbr></wbr><span><span>Observer</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1900019360%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-remote-config-fetch-failure-observer/index.html">RemoteConfigFetchFailureObserver</a></div><div class="brief "><p class="paragraph">Receives recoverable Firebase Remote Config fetch failures.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="86064530%2FClasslikes%2F-7743565" anchor-label="RemoteConfigKeys" id="86064530%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-remote-config-keys/index.html"><span>Remote</span><wbr></wbr><span>Config</span><wbr></wbr><span><span>Keys</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="86064530%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-remote-config-keys/index.html">RemoteConfigKeys</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>forceUpdate<span class="token operator">: </span><a href="-remote-config-keys/-force-update-keys/index.html">RemoteConfigKeys.ForceUpdateKeys</a><span class="token operator"> = </span>ForceUpdateKeys()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>optionalUpdate<span class="token operator">: </span><a href="-remote-config-keys/-optional-update-keys/index.html">RemoteConfigKeys.OptionalUpdateKeys</a><span class="token operator"> = </span>OptionalUpdateKeys()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>notice<span class="token operator">: </span><a href="-remote-config-keys/-notice-keys/index.html">RemoteConfigKeys.NoticeKeys</a><span class="token operator"> = </span>NoticeKeys()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1894422593%2FClasslikes%2F-7743565" anchor-label="UpdateAlert" id="1894422593%2FClasslikes%2F-7743565" data-filterable-set=":launching-service/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":launching-service/release" data-filterable-set=":launching-service/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-update-alert/index.html"><span>Update</span><wbr></wbr><span><span>Alert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1894422593%2FClasslikes%2F-7743565"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":launching-service/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-update-alert/index.html">UpdateAlert</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>title<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>message<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>doneUri<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
